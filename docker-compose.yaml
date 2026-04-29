@@ -87,10 +87,10 @@ x-airflow-common:
 
 services:
   postgres_dwh:
-    image: postgres:13
+    image: postgres:15
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres_dwh
+      POSTGRES_PASSWORD: postgres_dwh
       POSTGRES_DB: postgres
     restart: always
     ports:
